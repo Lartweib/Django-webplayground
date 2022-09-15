@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'registration',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -131,3 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CKEDITOR_CONFIGS = {
                     'default': {'width': 'auto',},
                     }
+
+
+#Auth redirects 
+LOGIN_REDIRECT_URL = 'home'
