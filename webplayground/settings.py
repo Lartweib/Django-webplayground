@@ -135,4 +135,5 @@ CKEDITOR_CONFIGS = {
 
 
 #Auth redirects 
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'pages:pages'
+LOGOUT_REDIRECT_URL = 'home'
