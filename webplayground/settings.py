@@ -135,7 +135,7 @@ CKEDITOR_CONFIGS = {
 
 
 #Auth redirects 
-LOGIN_REDIRECT_URL = 'pages:pages'
+#LOGIN_REDIRECT_URL = 'pages:pages'
 LOGOUT_REDIRECT_URL = 'home'
 
 
@@ -146,3 +146,8 @@ if DEBUG:
 else:
     # Aqui hay que configurar un email real para produccion
     pass
+
+
+# Media Files 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
