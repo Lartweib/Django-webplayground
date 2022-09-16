@@ -34,8 +34,8 @@
                             {{ form.bio }}
                             {{ form.link }}
                             <input type="email" value="{{request.user.email}}" class="form-control mt-3" readonly>
-                            <p class="mt-3">Si deseas editar tu email haz clic <a href="{% url 'profile_email' %}">aqui</a>.</p><br>
-                            Y si quieres cambiar tu contraseña haz clic <a href="{% url 'password_change' %}">aqui</a>.
+                            <p class="mt-3">Si deseas editar tu email haz clic <a href="{% url 'profile_email' %}">aqui</a><br>
+                            Y si quieres cambiar tu contraseña haz clic <a href="{% url 'password_change' %}">aqui</a>.</p>
                             <input type="submit" class="btn btn-primary btn-block mt-3" value="Actualizar">
                         </div>
                     </div>
