@@ -59,6 +59,17 @@
               {% endfor %}
             </div>
             <!-- Aquí crearemos el formulario -->
+            <button id="testBtn">Peticion asincrona de prueba</button>
+            <script>
+              var testBtn = document.getElementById("testBtn");
+              testBtn.addEventListener("click", function(){
+                var content = "Esto es una prueba"
+                const url = "{% url 'messenger:add' thread.pk %}" + "?content=" + content;
+                fetch(url).then(response => response.json()).then(function(data){
+                  alert(data.created)
+                })
+              })
+            </script>
           </div>
         </div>
     </div>
